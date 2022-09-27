@@ -28,11 +28,7 @@ function init() {
 
   // 箱3の表示設定
 
-
   // 光源の設定
-  const spotLight = new THREE.SpotLight();
-  spotLight.position.set(24, 16, 8);
-  scene.add(spotLight);
 
   // カメラの設定
   const camera = new THREE.PerspectiveCamera(
