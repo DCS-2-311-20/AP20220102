@@ -1,7 +1,9 @@
 //
-// 応用プログラミング 課題３．１
+// 応用プログラミング 第1回 課題2
 //
 "use strict"; // 厳格モード
+
+import * as THREE from 'three';
 
 // ３Ｄページ作成関数の定義
 function init() {
@@ -19,6 +21,18 @@ function init() {
   plane.rotation.x = -0.5 * Math.PI;
   scene.add(plane);
   /**/
+
+  // 箱1の表示設定
+
+  // 箱2の表示設定
+
+  // 箱3の表示設定
+
+
+  // 光源の設定
+  const spotLight = new THREE.SpotLight();
+  spotLight.position.set(24, 16, 8);
+  scene.add(spotLight);
 
   // カメラの設定
   const camera = new THREE.PerspectiveCamera(
